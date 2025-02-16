@@ -164,6 +164,7 @@ class _AttendanceDashboardState extends State<AttendanceDashboard> {
                 icon: Icon(Icons.info_outline),
                 selectedIcon: Icon(Icons.info),
                 label: Text('About'),
+                
               ),
             ],
           ),
