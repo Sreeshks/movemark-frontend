@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:movemark/screens/analomaly.dart';
 import 'package:movemark/screens/calender.dart';
 import 'package:movemark/screens/dashboard/dashboard_screen.dart';
 import 'package:movemark/screens/employees/employees_screen.dart';
@@ -155,6 +156,11 @@ class _AttendanceDashboardState extends State<AttendanceDashboard> {
                 label: Text('Employees'),
               ),
               NavigationRailDestination(
+                icon: Icon(Icons.find_replace_rounded),
+                selectedIcon: Icon(Icons.find_replace_outlined),
+                label: Text('Anomaly Detection'),
+              ),
+              NavigationRailDestination(
                 icon: Icon(Icons.info_outline),
                 selectedIcon: Icon(Icons.info),
                 label: Text('About'),
@@ -183,6 +189,8 @@ class _AttendanceDashboardState extends State<AttendanceDashboard> {
       case 4:
         return EmployeesScreen();
       case 5:
+        return AnomalyDetection();
+      case 6:
         return AboutPage();
       default:
         return Dashboard();
